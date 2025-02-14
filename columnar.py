@@ -21,7 +21,7 @@ else:
     for i in range(3):
         row = []
         for j in range(3):
-            row.append(input_str[index])
+            row.append(input_str[index] if index < len(input_str) else '')
             index += 1
         matrix.append(row)
 
